@@ -7,7 +7,7 @@
 // 25 a 29,9 é sobrepeso, 
 // e 30 ou mais indica obesidade. 
 
- prompt = require('prompt-sync')()
+ const prompt = require('prompt-sync')()
  var altura = parseFloat(prompt('Digite a sua altura:'))
  var peso = parseFloat(prompt('Digite o seu peso: '))
  var imc = peso / (altura * altura)

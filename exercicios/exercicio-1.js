@@ -2,6 +2,7 @@
 // utilizando uma estrutura de controle if.
 
 var numero = 0
+
 if(numero % 2 === 0){
     console.log('O número ', numero, 'é par' )
 } else {

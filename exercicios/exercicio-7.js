@@ -2,7 +2,7 @@
 // forem compradas pelo menos doze. Escreva um algoritmo que leia o número de maçãs
 // compradas, calcule e escreva o valor total da compra.
 
-prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')()
 var macas = Number(prompt('Digite a quantidade de maças desejada: '))
 
 if(macas < 12){

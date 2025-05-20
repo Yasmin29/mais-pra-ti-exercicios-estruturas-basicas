@@ -7,3 +7,22 @@
 // Triângulo escaleno: possui todos os lados diferentes (A<>B e B <> C)
 // Triângulo eqüilátero: possui todos os lados iguais (A=B e B=C)
 
+const prompt = require('prompt-sync')()
+
+let A = Number(prompt('Digite o valor do lado A:'))
+let B = Number(prompt('Digite o valor do lado B:'))
+let C = Number(prompt('Digite o valor do lado C:'))
+
+if (A < B + C && B < A + C && C < A + B) {
+
+    if (A === B && B === C) {
+        console.log('Triângulo equilátero: possui todos os lados iguais')
+    } else if (A === B || A === C || B === C) {
+        console.log('Triângulo isósceles: possui dois lados iguais')
+    } else {
+        console.log('Triângulo escaleno: possui todos os lados diferentes')
+    }
+
+} else {
+    console.log('Não é um triângulo válido')
+}

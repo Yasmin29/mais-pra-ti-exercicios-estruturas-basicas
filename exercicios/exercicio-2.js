@@ -3,6 +3,7 @@
 // controle if-else.
 
 var idade = 200
+
 if(idade <= 10){
     console.log('Uma pessoa com', idade, 'é uma criança')
 } else if(idade < 18  ){
